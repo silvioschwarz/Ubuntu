@@ -1,0 +1,10 @@
+[Desktop Entry]
+ Name=Amazon Prime
+ GenericName=Instant Video
+ GenericName[de]=Instant Videos abspielen
+ Comment=Instant Video
+ Exec=/usr/bin/google-chrome --app=http://www.amazon.de/piv 
+ Icon=/home/silvio/Bilder/amazonprime.png
+ Terminal=false
+ Type=Application
+ Categories=Multimedia
