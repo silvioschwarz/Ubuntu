@@ -30,7 +30,7 @@ echo -n "INSTALLING GNOME"
 echo -n "############################"
 echo
 
-sudo apt install -y  gnome-core ubuntu-gnome-wallpapers gnome gnome-shell gnome-session
+sudo apt install -y  gnome-core ubuntu-gnome-wallpapers gnome gnome-shell gnome-session gnome-session-flashback
 
 #UBUNTU PACKAGES
 echo -n "##########################"
@@ -48,12 +48,11 @@ sudo apt install -y  git git-core git-gui git-doc
 git config --global user.name "Silvio Schwarz"
 git config --global user.email admin@silvioschwarz.com
 
-sudo apt install -y  gconf-editor dconf-tools gimp gimp-help-de language-pack-gnome-de ubuntu-restricted-extras bleachbit plank gnome-control-center gnome-online-accounts
+sudo apt install -y  gconf-editor gimp gimp-help-de language-pack-gnome-de ubuntu-restricted-extras bleachbit plank gnome-control-center gnome-online-accounts
 
 sudo apt install -y indicator-applet-complete gnome-tweak-tool chrome-gnome-shell
 sudo apt install -y build-essential libbluetooth-dev g++ gfortran make gcc
 sudo apt install -y openssh-server
-sudo apt install -y chrome-gnome-shell
 
 sudo apt install -y network-manager-openvpn-gnome
 

@@ -11,7 +11,7 @@ tar -xzvf uld.tar.gz
 
 yes y | sudo uld/install.sh
 
-#sudo rm -r uld.tar.gz uld
+sudo rm -r uld.tar.gz uld
 
 
 sudo apt install libusb-0.1-4

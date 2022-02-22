@@ -55,7 +55,6 @@ rm skype.deb
 
 #echo "Installing Slack"
 #sudo snap install slack --classic
-sudo apt install libpango1.0-0
 
 echo "INSTALLING Dropbox"
 sudo apt install python-gpg
@@ -82,5 +81,7 @@ echo "INSTALLING ATOM EDITOR"
 wget -c -O atom.deb https://atom.io/download/deb/atom-amd64.deb
 sudo dpkg -i atom.deb
 rm atom.deb
+
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 
 sudo apt-get install plymouth-x11 

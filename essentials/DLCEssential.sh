@@ -5,13 +5,13 @@
 #sudo dpkg -i rainlendarpro.deb
 #rm rainlendarpro.deb
 
-echo -n "INSTALLING Dropbox"
-echo
-sudo apt install libpango1.0-0
-wget -c -O dropbox.deb https://linux.dropbox.com/packages/ubuntu/$(wget -q https://linux.dropbox.com/packages/ubuntu/ -O - | egrep -o "dropbox_[0-9\.]+_amd64.deb"| sort -V  | tail -1)
-sudo dpkg -i dropbox.deb
-rm dropbox.deb
-~/.dropbox-dist/dropboxd
+#echo -n "INSTALLING Dropbox"
+#echo
+#sudo apt install libpango1.0-0
+#wget -c -O dropbox.deb https://linux.dropbox.com/packages/ubuntu/$(wget -q https://linux.dropbox.com/packages/ubuntu/ -O - | egrep -o "dropbox_[0-9\.]+_amd64.deb"| sort -V  | tail -1)
+#sudo dpkg -i dropbox.deb
+#rm dropbox.deb
+#~/.dropbox-dist/dropboxd
 
 echo -n "INSTALLING GOOGLE CHROME BROWSER"
 echo

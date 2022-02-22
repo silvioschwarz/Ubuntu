@@ -2,4 +2,4 @@
 
 sudo apt -y install curl 
 
-curl -Ls https://github.com/Tux4Ubuntu/tux-install/raw/master/install.sh | bash
+wget -c -Ls https://github.com/Tux4Ubuntu/tux-install/raw/master/install.sh | bash
