@@ -21,7 +21,7 @@ sudo apt install curl
 #sudo apt install github-desktop
 
 
-curl -s https://api.github.com/repos/shiftkey/desktop/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -c -O githubDesktop.deb -qi -
+curl -s https://api.github.com/repos/shiftkey/desktop/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -c -O githubDesktop.deb -qi - --show-progress
 
 sudo dpkg -i githubDesktop.deb
 
