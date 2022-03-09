@@ -5,7 +5,7 @@ echo -n "ADDING PPA'S"
 echo -n "############"
 echo 
 
-echo | sudo apt-add-repository ppa:rodsmith/refind
+#echo | sudo apt-add-repository ppa:rodsmith/refind
 echo | sudo apt-add-repository ppa:linrunner/tlp
 echo | sudo apt-add-repository ppa:numix/ppa
 #echo | sudo apt-add-repository ppa:webupd8team/atom
@@ -24,7 +24,7 @@ echo -n "INSTALLING NUMIX THEMES AND ICONS"
 sudo apt-get install -y numix-icon-theme numix-icon-theme-circle
 
 echo -n "INSTALLING rEFInd"
-sudo apt-get install refind
+#sudo apt-get install refind
 
 echo -n "INSTALLING ATOM EDITOR"
 #sudo apt-get install atom

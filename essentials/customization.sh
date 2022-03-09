@@ -28,20 +28,25 @@ EOF
 
 
 
-
 echo -n "LANGUAGE SUPPORT"
 echo
-sudo apt-get install language-selector-gnome language-pack-gnome-de gksu 
-gksudo gnome-language-selector
+sudo apt-get install language-selector-gnome language-pack-gnome-de gksudo gnome-language-selector
 
 #configure
 mkdir ~/.themes
-#git clone https://github.com/vinceliuice/Mojave-gtk-theme.git
-#cd Mojave-gtk-theme
-#./install.sh
+git clone https://github.com/vinceliuice/Mojave-gtk-theme.git
+cd Mojave-gtk-theme
 
-sudo snap install mojave-themes
+sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf sassc optipng inkscape libglib2.0-dev-bin
+#- libglib2.0-dev  `ubuntu 18.04` `debian 10.03` `linux mint 19`
+#- libxml2-utils  `ubuntu 18.04` `debian 10.03` `linux mint 19`
+#- glib2-devel  `Fedora` `Redhat`
 
-./installTux.sh
 
-./refindC.sh
+./install.sh
+
+#sudo snap install mojave-themes
+
+#./installTux.sh
+
+#-/refindC.sh
