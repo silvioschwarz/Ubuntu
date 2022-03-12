@@ -2,7 +2,7 @@ THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
 default:
 	@echo $@  # print target name
-	@$(MAKE) -f $(THIS_FILE) conda
+	@$(MAKE) -f $(THIS_FILE) gnome
 
 
 conda:
@@ -26,7 +26,7 @@ gmt:
 gnome:
 	./essentials/gnomeInstall.sh
 instaseis:
-#	onda install -c conda-forge obspy h5py future requests tornado flake8 pytest mock basemap pyqt pip jsonschema responses pyqtgraph pytest-xdist
+#	conda install -c conda-forge obspy h5py future requests tornado flake8 pytest mock basemap pyqt pip jsonschema responses pyqtgraph pytest-xdist
 	conda install -c conda-forge instaseis
 jekyll:
 	./essentials/jekyllInstall.sh
@@ -40,6 +40,8 @@ obspy:
 	./essentials/obspy.sh
 printer:
 	./essentials/printer.sh
+ppa:
+	./essentials/ppaInstall.sh
 python:
 	./essentials/pythonInstall.sh
 qgis:
@@ -48,6 +50,8 @@ r:
 	./essentials/RRStudioInstall.sh
 spotify:
 	sudo snap install spotify
+snap:
+	./essentials/snapIntall.sh
 tux:
 	sudo apt -y install curl && bash <(curl -Ls https://github.com/Tux4Ubuntu/tux-install/raw/master/install.sh)
 vscode:

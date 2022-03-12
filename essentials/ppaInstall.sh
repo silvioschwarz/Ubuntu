@@ -35,6 +35,6 @@ echo -n "INSTALLING KEEPASSXC"
 #sudo apt install calibre
 #https://github.com/apprenticeharper/DeDRM_tools/releases/
 
-./update.sh
+./updates/update.sh
 #apm install seti-ui monokai-seti todo-show minimap highlight-selected minimap-highlight-selected autoclose-html pigments linter linter-htmlhint linter-csslint linter-jshint auto-detect-indentation atom-beautify hydrogen jupyter-notebook emmet git-plus file-icons
 
