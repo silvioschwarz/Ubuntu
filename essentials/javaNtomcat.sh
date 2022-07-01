@@ -1,6 +1,6 @@
 #! /bin/sh
 
-sudo apt install openjdk
+sudo apt install openjdk-17-jre
 java --version
 
 sudo apt-cache search tomcat
@@ -18,4 +18,5 @@ sudo nano /etc/tomcat9/tomcat-users.xml
 sudo systemctl enable tomcat9
 sudo systemctl restart tomcat9
 
-sudo apt install apache2
+#check ports
+ss -ltn

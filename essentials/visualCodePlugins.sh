@@ -47,3 +47,34 @@ code --uninstall-extension ( | )
   Uninstalls an extension.
 code --enable-proposed-api ()
   Enables proposed API features for extensions. Can receive one or more extension IDs to enable individually."
+  
+code --list-extensions | xargs -L 1 echo code --install-extension
+
+
+code --install-extension bierner.color-info
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension DotJoshJohnson.xml
+code --install-extension ecmel.vscode-html-css
+code --install-extension eg2.vscode-npm-script
+code --install-extension esbenp.prettier-vscode
+code --install-extension michelemelluso.code-beautifier
+code --install-extension mrmlnc.vscode-scss
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension MS-CEINTL.vscode-language-pack-de
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode.vs-keybindings
+code --install-extension PrateekMahendrakar.prettyxml
+code --install-extension RandomFractalsInc.geo-data-viewer
+code --install-extension ritwickdey.LiveServer
+code --install-extension Shan.code-settings-sync
+code --install-extension tht13.html-preview-vscode
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscode-icons-team.vscode-icons
+
+
