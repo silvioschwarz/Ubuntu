@@ -33,8 +33,10 @@ sudo apt install gnupg software-properties-common
 
 
 
-wget -qO - https://qgis.org/downloads/qgis-2021.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
-sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+#wget -qO - https://qgis.org/downloads/qgis-2021.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
+#sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+
+wget -qO - https://qgis.org/downloads/qgis-$(date +%Y).gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
 
 sudo add-apt-repository "deb [arch=$(dpkg --print-architecture)] https://qgis.org/ubuntu $(lsb_release -c -s) main"
 
