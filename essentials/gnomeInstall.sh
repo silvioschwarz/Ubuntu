@@ -57,7 +57,7 @@ sudo apt install -y openssh-server
 sudo apt install -y network-manager-openvpn-gnome
 
 sudo apt install -y pdfshuffler pdfsam
-
+sudo apt install -y plocate powertop preload
 sudo apt install ubuntu-restricted-extras
 sudo apt install libavcodec-extra
 sudo apt install libdvd-pkg
