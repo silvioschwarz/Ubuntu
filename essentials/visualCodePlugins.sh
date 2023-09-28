@@ -1,5 +1,6 @@
 #! /bin/sh
 
+code --list-extensions
 code --install-extension Shan.code-settings-sync
 code --install-extension abusaidm.html-snippets
 code --install-extension shardulm94.trailing-spaces

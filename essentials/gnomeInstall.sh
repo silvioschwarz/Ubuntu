@@ -66,3 +66,13 @@ sudo apt install libdvd-pkg
 #wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 #sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 
+sudo apt install bash-completion
+#grep -qxF 'include "/configs/projectname.conf"' foo.bar || echo 'include "/configs/projectname.conf"' >> foo.bar
+LINE='source /etc/profile.de/bash_completion'
+FILE="~/.bashrc"
+
+grep -qxF $LINE || echo $LINE >> $FILE
+
+LINE="bind -s 'set completion-ignore-case on'"
+grep -qxF $LINE || echo $LINE >> $FILE
+
